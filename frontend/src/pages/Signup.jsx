@@ -42,6 +42,10 @@ const Signup = () => {
             </Typography>
           </Box>
         </Paper>
+        {/* Back to Dashboard Button */}
+        <Button variant="outlined" fullWidth sx={{ mt: 2 }} onClick={() => navigate("/dashboard")}>
+          Back to Dashboard
+        </Button>
       </Container>
     </>
   );

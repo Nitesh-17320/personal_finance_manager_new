@@ -23,7 +23,6 @@ const Login = ({ setUserName }) => {
       setError(err.response?.data?.message || "Login failed");
     }
   };
-  
 
   return (
     <>
@@ -45,6 +44,10 @@ const Login = ({ setUserName }) => {
             </Typography>
           </Box>
         </Paper>
+        {/* Back to Dashboard Button */}
+        <Button variant="outlined" fullWidth sx={{ mt: 2 }} onClick={() => navigate("/dashboard")}>
+          Back to Dashboard
+        </Button>
       </Container>
     </>
   );
